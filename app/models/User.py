@@ -3,9 +3,6 @@ from flask import current_app, request, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
-
-
-
 class User():
     def __init__(self, username):
         self.username = username
